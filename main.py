@@ -5,9 +5,8 @@ def main():
     chars_dict = get_chars_dict(text)
     aplhabet_char = get_alphabet_chars(chars_dict)
     sorted_dict = dict(sort_dict(aplhabet_char))
-    print(sorted_dict)
     book_report = generate_report(sorted_dict, book_path, num_words)
-    print(book_report)
+    return book_report
 
 
 def get_num_words(text):
